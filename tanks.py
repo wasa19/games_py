@@ -217,6 +217,9 @@ while running:
 		if helth == 0:
 			helth = 10
 			game_over = True
+			for enemy in enemys:
+				if len(enemys) > 1:
+					enemy.kill()
 
 	# all_sprites = pg.sprite.Group()
 	# player_tank = PlayerTank()
